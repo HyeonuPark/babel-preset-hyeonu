@@ -31,7 +31,7 @@ var handlers = {
   }
 }
 
-module.export = function (obj, handler) {
+module.exports = function (obj, handler) {
   var result = flat(obj, '', [])
 
   if (!handler || !handlers[handler]) {
